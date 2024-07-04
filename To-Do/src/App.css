@@ -1,42 +1,44 @@
-#root {
+.App {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mainbox {
+  background-color: rgb(255, 230, 234);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.to-left {
+  text-align: left;
+  padding: 6px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+
+input[type='text'],
+input[type='date'] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.card {
-  padding: 2em;
+button {
+  width: 70%;
 }
 
-.read-the-docs {
-  color: #888;
+.fix-btn {
+  margin-left: -0.5%;
+  padding: 7px;
+  padding-top: 2.5px;
+}
+
+.l-row {
+  margin: 1%;
 }
