@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#NameClock {
+  font-weight: bolder;
+  font-size: 3rem;
+
+}
+
+.MainBox {
+  background-color: rgb(171, 198, 247);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  margin: 90px;
+  padding: 20px;
+}
