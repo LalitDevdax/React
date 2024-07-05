@@ -1,7 +1,5 @@
-function Addlist1() {
+function TodoItems({ todoname, tododate }) {
 
-    let todoname = 'Buy Milk';
-    let tododate = '02/10/2024';
     return <>
         <div className="container ">
             <div className="row l-row">
@@ -11,6 +9,5 @@ function Addlist1() {
             </div>
         </div>
     </>
-
 }
-export default Addlist1;
+export default TodoItems;
