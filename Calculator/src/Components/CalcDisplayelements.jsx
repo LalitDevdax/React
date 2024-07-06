@@ -1,7 +1,7 @@
-function CalcDisplayelements({ ele }) {
+function CalcDisplayelements({ ele, onButtonClick }) {
     return <>
         <div class="grid text-center fixelements">
-            <button className="butt">{ele}</button>
+            <button className="butt" onClick={onButtonClick}>{ele}</button>
         </div>
     </>
 }

@@ -1,8 +1,9 @@
 import CalcDisplayelements from "./CalcDisplayelements"
-const CalculatorElements = ({ elements }) => {
+const CalculatorElements = ({ elements, onButtonClick }) => {
+
     return <>
         <div className="fixele">
-            {elements.map((expressions) => <CalcDisplayelements ele={expressions}></CalcDisplayelements>)}
+            {elements.map((expressions) => <CalcDisplayelements ele={expressions} onButtonClick={() => onButtonClick(expressions)}></CalcDisplayelements>)}
         </div>
     </>
 
