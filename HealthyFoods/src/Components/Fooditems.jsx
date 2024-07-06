@@ -5,7 +5,7 @@ function Fooditems({ items }) {
 
         return <>
             <ul className="list-group">
-                <li className="list-group-item"><h4>I'm Hungryy - Fill Me Up</h4></li>
+                <li className="list-group-item "><h4>I'm Hungryy - Fill Me Up</h4></li>
             </ul>
         </>
     }
@@ -13,7 +13,7 @@ function Fooditems({ items }) {
 
     return (
         <>
-            <ul className="list-group">
+            <ul className="list-group ">
                 {items.map((itemstoiterate) =>
                     <Items key={itemstoiterate} fooditems={itemstoiterate}></Items>
                 )}

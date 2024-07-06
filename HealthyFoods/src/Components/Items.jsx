@@ -1,8 +1,11 @@
-import styles from "./Items.module.css";
 const Items = ({ fooditems }) => {
 
+
     return <>
-        <li className={`${styles["itemm-bg"]} list-group-item`}>{fooditems}</li>
+        <li className="list-group-item lastt">
+            <span>{fooditems}</span>
+            <button type="button" className="btn btn-outline-success fixbuy">Buy</button>
+        </li>
     </>
 }
 
