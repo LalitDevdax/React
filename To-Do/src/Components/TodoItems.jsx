@@ -1,4 +1,9 @@
-function TodoItems({ todoname, tododate, handledeleteitem }) {
+import { useContext } from "react";
+import { TodoItemsContext } from "../store/todoitems-context";
+
+function TodoItems({ todoname, tododate }) {
+
+    const { handledeleteitem } = useContext(TodoItemsContext)
 
     return <>
         <div className="container ">

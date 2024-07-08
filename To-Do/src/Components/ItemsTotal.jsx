@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import TodoItems from "./TodoItems";
-function ItemsTotal({ todoItems, handledeleteitem }) {
+import { TodoItemsContext } from "../store/todoitems-context";
+const ItemsTotal = () => {
+    const { todo } = useContext(TodoItemsContext);
     return <>
         <div className="items-cont">
-            {todoItems.map((lists) => <TodoItems key={lists.name} todoname={lists.name} tododate={lists.duedate} handledeleteitem={handledeleteitem}></TodoItems>)}
+            {todo.map((lists) => <TodoItems key={lists.name} todoname={lists.name} tododate={lists.duedate} ></TodoItems>)}
 
 
         </div>

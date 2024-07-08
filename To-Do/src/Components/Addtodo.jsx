@@ -1,30 +1,31 @@
-import { useState } from "react";
+import { useRef } from "react";
+import { useContext } from "react";
 
-function Addtodo({ onnewitem }) {
+import { TodoItemsContext } from "../store/todoitems-context";
 
-    const [inputvalue, setInputvalue] = useState();
-    const [inputvaluedate, setInputvaluedate] = useState();
+function Addtodo() {
 
-    const handleinputname = (e) => {
-        setInputvalue(e.target.value);
-    }
-    const handleinputdate = (e) => {
-        setInputvaluedate(e.target.value);
+    const { handlenewitem } = useContext(TodoItemsContext);
 
-    }
+    const todonameelement = useRef();
+    const tododateelement = useRef();
+
 
     const handlenewadd = () => {
-        onnewitem(inputvalue, inputvaluedate);
-        setInputvalue("");
-        setInputvaluedate("");
+        const inputvalue = todonameelement.current.value;
+        const inputvaluedate = tododateelement.current.value;
+        handlenewitem(inputvalue, inputvaluedate);
+        todonameelement.current.value = ("");
+        tododateelement.current.value = ("");
+
 
     }
 
     return <>
-        <div classNameName="container">
+        <div className="container">
             <div className="row mainl-row l-row">
-                <div className="col-4 fix-todo"><input type="text" placeholder='Enter To-Do Here' onChange={handleinputname} value={inputvalue} /></div>
-                <div className="col-4 fix-todo"><input type="date" onChange={handleinputdate} value={inputvaluedate} /></div>
+                <div className="col-4 fix-todo"><input type="text" placeholder='Enter To-Do Here' ref={todonameelement} /></div>
+                <div className="col-4 fix-todo"><input type="date" ref={tododateelement} /></div>
                 <div className="col-2 fix-btn"><button type="button" className="btn btn-success" onClick={handlenewadd}>Add</button></div>
             </div>
         </div>
