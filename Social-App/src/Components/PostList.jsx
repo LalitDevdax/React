@@ -16,7 +16,7 @@ const PostList = () => {
     const signal = controller.signal;
     fetch("https://dummyjson.com/posts",{signal})
       .then((res) => res.json())
-      .then((data) => {
+      .then((data) => { 
         addinitialPost(data.posts);
         setFetching(false);
       })
