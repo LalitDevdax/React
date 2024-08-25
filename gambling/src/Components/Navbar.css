@@ -1,0 +1,127 @@
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 5px;
+    left: 229px;
+    width: calc(100% - 233px);
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+
+
+}
+
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0 15px;
+
+}
+
+.navbar-menu a:hover {
+    text-decoration: none;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.Dashboard {
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+
+}
+
+
+
+
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.btn-group .btn {
+    background: none;
+    /* Remove background */
+    border: none;
+    /* Remove border */
+    color: #ecf0f1;
+    /* Text color */
+    padding: 10px 20px;
+    /* Add padding */
+    font-size: 16px;
+    /* Adjust font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: color 0.3s;
+    /* Smooth color transition */
+}
+
+/* Hide the default caret icon in Bootstrap dropdown */
+.btn-group .btn::after {
+    display: none;
+    /* Hide the caret */
+}
+
+.btn-group .btn:hover {
+    color: #3498db;
+    /* Change text color on hover */
+    text-decoration: none;
+    /* Underline text on hover */
+}
+
+.dropdown-menu {
+    background-color: #2c3e50;
+
+    border: none;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.dropdown-item {
+    color: #ecf0f1;
+
+}
+
+.dropdown-item:hover {
+    background-color: #34495e;
+
+    color: #ecf0f1;
+
+}
+
+.navbar-link {
+    color: #ecf0f1;
+
+    text-decoration: none;
+
+    padding: 0 15px;
+
+    font-size: 16px;
+
+}

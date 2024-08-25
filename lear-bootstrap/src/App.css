@@ -20,10 +20,10 @@
 
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    transhtmlForm: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transhtmlForm: rotate(360deg);
   }
 }
 

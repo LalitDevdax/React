@@ -1,0 +1,43 @@
+#root {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+#sidebar {
+  display: flex;
+  min-height: 625px;
+}
+
+#content{
+  width: 100%;
+}
+
+.post-card{
+  margin: 20px 40px;
+}
+
+
+.hashtag{
+  margin : 1px 3px;
+}
+
+.footer {
+  background-color: rgb(245, 247, 247);
+}
+
+.reactions {
+ margin: 30px 0 0 0 ;
+}
+
+.create-post{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.welcome {
+  margin-top: 5%;
+}
+.loader {
+  margin-top: 6%;
+}

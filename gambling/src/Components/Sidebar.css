@@ -1,0 +1,108 @@
+.sidebar {
+    width: 225px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Style the scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #1abc9c;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #2c3e50;
+}
+
+.sidebar-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-submenu>li {
+    padding: 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+    /* Make the list item a positioning context */
+}
+
+.sidebar-menu>li:hover {
+    background: #34495e;
+}
+
+.sidebar-menu>li i {
+    margin-right: 10px;
+
+}
+
+.sidebar-submenu>li::behtmlFore {
+    content: '•';
+    /* Unicode htmlFor a filled circle */
+    color: #ecf0f1;
+    /* Color of the filled circle */
+    font-size: 10px;
+    /* Adjust size of the filled circle */
+    position: absolute;
+    /* Position it relative to the li */
+    left: -15px;
+    /* Position it to the left of the text */
+    top: 50%;
+    /* Vertically center it */
+    transhtmlForm: translateY(-50%);
+    /* Adjust htmlFor perfect centering */
+}
+
+.sidebar-submenu {
+    font-size: 14px;
+    padding-left: 40px;
+    margin: 0;
+    list-style-type: disc;
+}
+
+.sidebar-submenu li {
+    color: #ffffff;
+}
+
+.sidebar-submenu>li:hover {
+    background: #34495e;
+}
+
+
+
+
+.sidebar-menu li {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar-menu li i {
+    font-size: 1em;
+}
+
+.sidebar-menu .arrow {
+    margin-left: auto;
+    font-size: 1em;
+}
