@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AiFillDelete } from "react-icons/ai";
-import { PostList } from "../store/post-list-store";
+import { PostList } from "../store/PostListProvider";
 
 const Post = ({ post }) => {
   const { deletePost } = useContext(PostList);
@@ -11,7 +11,7 @@ const Post = ({ post }) => {
         <h5 className="card-title">
           {post.title}
           <span
-            className=" btn position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            className="btn position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
             onClick={() => deletePost(post.id)}
           >
             <AiFillDelete />
@@ -24,7 +24,7 @@ const Post = ({ post }) => {
           </span>
         ))}
         <div className="alert alert-success reactions" role="alert">
-        This post has been reacted to by {post.reactions.likes || 0} people (Likes: {post.reactions.likes || 0}, Dislikes: {post.reactions.dislikes || 0}).
+          This post has been reacted to by {post.reactions.likes || 0} people.
         </div>
       </div>
     </div>

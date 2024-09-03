@@ -12,10 +12,21 @@
 }
 
 .MainBox {
-  background-color: rgb(171, 198, 247);
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin: 90px;
-  padding: 20px;
+  width: 60%;
+  margin: 90px auto;
+  padding: 40px;
+  
+  /* Glass effect styling */
+  background: rgba(255, 255, 255, 0.2);  /* Semi-transparent background */
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Stronger shadow for depth */
+  backdrop-filter: blur(15px);  /* Apply the glassy blur */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Light border for glassy look */
+
+  /* Optional styling for a polished look */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow to stand out */
 }
