@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,html{
+    width: 100%;
+    background-color: rgb(24 24 27);
+    min-height: 100vh;
+    color: white;
+  }
+
